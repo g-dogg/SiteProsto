@@ -1,0 +1,151 @@
+doctype html
+html
+	head
+		include parts/head.pug
+	body
+		include parts/yandex.pug
+		div.loader
+			div.loaderInner
+		div.container-fluid.mainContent#fullpage
+			div.row
+				section.col-xs-12.col-md-12.mainHead.slide.scene#scene(data-anchor="home")
+					div.topClouds
+						div.layer.topCloud1(data-depth="0.20")
+						div.layer.topCloud2(data-depth="0.40")
+					div.layer.smallCloud1(data-depth="0.80")
+					div.layer.smallCloud2(data-depth="0.80")
+					div.mainLogo(data-depth="0.50")
+						div.svgLogo
+							include parts/svgLogo.pug
+					div.mainInfo
+						h1.text-focus-in СайтПросто. Делаем продающие сайты.
+						p Наш сайт на подходе. А Вы - закажите свой сайт 
+							span.red сейчас!
+						p.phone +7(913) 638 17 79
+					div.layer.smallClouds2(data-depth="0.70")
+					div.bottomClouds
+						div.layer.bottomCloud1(data-depth="0.20")
+						div.layer.bottomCloud2(data-depth="0.40")
+				section.col-xs-12.col-md-12.mission.slide#mission(data-anchor="mis")
+					div.col-xs-12.col-md-12.secHeader#misHeader
+						h2 О нас
+					div.col-xs-12.col-md-4.secDescription#misDescr
+						h4 Мы команда людей, решающих Ваши проблемы и улучшающих Ваш бизнес
+					div.col-xs-12.col-md-4.misCol
+						div.missionColHeader
+							h5 Миссия
+						div.missionColDescr.text-justify.misAnim1
+							p Помогать нашим Партнерам и Клиентам достигать поставленных целей путем решения существующих задач с минимальными рисками и оптимальными затратами.
+					div.col-xs-12.col-md-4.misCol
+						div.missionColHeader
+							h5 Видение
+						div.missionColDescr.text-justify.misAnim2
+							p СайтПросто - ключевой игрок на рынке digital-услуг. Мы имеем компетенции в разработке, дизайне, оптимизации и продвижении. Наши бизнес-процессы оптимизированы и функциональны.
+					div.col-xs-12.col-md-4.misCol
+						div.missionColHeader
+							h5 Ценности
+						div.missionColDescr.text-justify.misAnim3
+							p Предвосхищать требования наших Клиентов и Партнеров. Повышать рентабельность и ликвидность Бизнеса. Создавать уникальные и высококлассные Продукты.
+				section.col-xs-12.col-md-12.work.slide#work(data-anchor="wrk")
+					div.col-xs-12.col-md-12.secHeader
+						h2 Наши компетенции
+					div.col-xs-6.col-md-3.workCol
+						div.workImg
+							img(src="assets/bman01.svg" alt="продающие сайты")
+						div.workColHeader
+							h5 Продающие сайты
+						div.workColDescr.text-justify
+							p Мы делаем сайты-визитки, посадочные страницы (landing page), одностраничные сайты (SPA)
+							p А так же корпоративные сайты, новостные сайты и порталы(СМИ), журналы, блоги,  интернет-магазины.
+					div.col-xs-6.col-md-3.workCol
+						div.workImg
+							img(src="assets/bman02.svg" alt="продвижение")
+						div.workColHeader
+							h5 Продвижение
+						div.workColDescr.text-justify
+							p Pellentesque quis felis ultrices, malesuada mauris sed, commodo nunc. Nulla sodales porttitor maximus. Fusce a mi pellentesque, venenatis augue vitae, mattis dui.
+							p Vivamus id aliquam neque. Integer arcu elit, auctor tincidunt turpis non, placerat iaculis est. Praesent euismod ultricies arcu.
+					div.col-xs-6.col-md-3.workCol
+						div.workImg
+							img(src="assets/bman03.svg" alt="дизайн")
+						div.workColHeader
+							h5 Дизайн
+						div.workColDescr.text-justify
+							p Integer mollis mi at aliquam vulputate. In lorem nulla, consectetur sed suscipit nec, condimentum vel enim. Quisque ut justo est. Nullam lobortis ac nisl a viverra. Quisque ante eros, vestibulum vel leo eget, laoreet commodo nulla. In viverra efficitur justo ac varius.
+					div.col-xs-6.col-md-3.workCol
+						div.workImg
+							img(src="assets/bman04.svg" alt="it-консалтинг")
+						div.workColHeader
+							h5 IT-консалтинг
+						div.workColDescr.text-justify
+							p Pellentesque sit amet justo odio. Donec dui ante, mattis ac diam sit amet, varius finibus dui. In neque odio, consectetur varius dui ut, ultrices molestie diam. Donec vitae iaculis justo. Morbi ac purus gravida, mattis ex consectetur, tristique dui.
+				section.col-xs-12.col-md-12.price.slide#price(data-anchor="pr")
+					div.col-xs-12.col-md-12.secHeader
+						h2 Наше предложение
+					div.col-xs-12.col-md-12.secDescription
+						h4 Integer arcu elit, auctor tincidunt turpis non, placerat iaculis est.
+					div.col-xs-6.col-sm-6.col-md-3
+						div.priceBlock.anim1
+							h3.text-center Сайт-визитка
+							p.text-justify Простой одностраничный сайт с несколькими разделами
+							p.text-justify Схема проезда, галерея, контакты
+							p.text-justify Форма обратной связи
+							p.text-justify Быстрая разработка и внедрение
+							p.text-justify Счетчики посещений и аналитика
+							p.text-justify SEO-ready, регистрация в поисковиках
+							p.text-justify Подойдет в качестве landing-page, для краткосрочной акции, а так же для малого и среднего бизнеса
+							div.priceColPrice.text-center
+								p от 4900 руб.
+							button.btn.btn-danger.btn-lg.center-block Заказать
+					div.col-xs-6.col-sm-6.col-md-3
+						div.priceBlock.anim2
+							h3.text-center Сайт-визитка
+							p.text-justify Простой одностраничный сайт с несколькими разделами
+							p.text-justify Схема проезда, галерея, контакты
+							p.text-justify Форма обратной связи
+							p.text-justify Быстрая разработка и внедрение
+							p.text-justify Счетчики посещений и аналитика
+							p.text-justify SEO-ready, регистрация в поисковиках
+							p.text-justify Подойдет в качестве landing-page, для краткосрочной акции, а так же для малого и среднего бизнеса
+							div.priceColPrice.text-center
+								p от 4900 руб.
+							button.btn.btn-danger.btn-lg.center-block Заказать
+					div.col-xs-6.col-sm-6.col-md-3
+						div.priceBlock.anim3
+							h3.text-center Сайт-визитка
+							p.text-justify Простой одностраничный сайт с несколькими разделами
+							p.text-justify Схема проезда, галерея, контакты
+							p.text-justify Форма обратной связи
+							p.text-justify Быстрая разработка и внедрение
+							p.text-justify Счетчики посещений и аналитика
+							p.text-justify SEO-ready, регистрация в поисковиках
+							p.text-justify Подойдет в качестве landing-page, для краткосрочной акции, а так же для малого и среднего бизнеса
+							div.priceColPrice.text-center
+								p от 4900 руб.
+							button.btn.btn-danger.btn-lg.center-block Заказать
+					div.col-xs-6.col-sm-6.col-md-3
+						div.priceBlock.anim4
+							h3.text-center Сайт-визитка
+							p.text-justify Простой одностраничный сайт с несколькими разделами
+							p.text-justify Схема проезда, галерея, контакты
+							p.text-justify Форма обратной связи
+							p.text-justify Быстрая разработка и внедрение
+							p.text-justify Счетчики посещений и аналитика
+							p.text-justify SEO-ready, регистрация в поисковиках
+							p.text-justify Подойдет в качестве landing-page, для краткосрочной акции, а так же для малого и среднего бизнеса
+							div.priceColPrice.text-center
+								p от 4900 руб.
+							button.btn.btn-danger.btn-lg.center-block Заказать
+				section.col-xs-12.col-md-12.contact.slide#contact(data-anchor="cont")
+					div.col-xs-12.col-md-12.secHeader
+						h2 Контакты
+					div.col-xs-12.col-md-12.secDescription
+						h4 Integer arcu elit, auctor tincidunt turpis non, placerat iaculis est.
+					div.col-md-1
+					div.col-xs-12.col-md-5
+						include parts/form.pug
+					div.col-xs-12.col-md-5.mapContainer
+						div.map.mapInner#map
+					div.col-md-1
+					include parts/footer.pug
+				include parts/scripts.pug

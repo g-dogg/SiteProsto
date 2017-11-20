@@ -1,0 +1,24 @@
+form.order
+	div.form-group
+		label(for="inputName1") Как к Вам обращаться?
+		input.form-control#inputName1(type="text" placeholder="Ваше имя..." name="name")/
+	div.form-group
+		label(for="inputEmail1") Электронная почта
+		input.form-control#inputEmail1(type="email" placeholder="e-mail" name="email")/
+	div.form-group
+		label(for="inputPhone1") Ваш номер телефона
+		input.form-control#phoneNumber(placeholder="Введите номер телефона ..." type="tel" name="phone" required)/
+	div.form-group
+		label(for="inputTheme")
+		select.form-control#inputTheme
+			option#themeOne Заказать сайт-визитку
+			option#themeTwo Заказать корпоративный сайт
+			option#themeThree Заказать интернет-магазин
+			option#themeFour Прочее
+	div.form-group
+		label(for="inputText") Введите Ваш вопрос
+		textarea.form-control#inputText(placeholder="Ваш вопрос..." name="text" row="6")
+	div.checkbox
+		label
+		input(type="checkbox")/ Я не робот
+	button.btn.btn-default(type="submit") Submit

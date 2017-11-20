@@ -1,0 +1,352 @@
+@import "../libs/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+@import "bourbon/bourbon"
+@import "../libs/normalize.sass/_normalize.sass"
+@import "../libs/font-awesome/scss/font-awesome.scss"
+@import "../libs/fullpage/jquery.fullPage.css"
+@import "_vars.sass"
+
+@font-face
+  font-family: Beryozki
+  src: url('../fonts/Beryozki/Beryozki.ttf')
+
+*, body, html, section, header
+  margin: 0
+  padding: 0
+
+html
+  color: $dark !important
+  min-height: 100%
+  font-size: 14px
+
+body
+  color: $dark
+
+section
+  background: $veryLyght
+  display: block
+  font-family: $secondFont
+  position: relative
+  float: left
+  min-height: 100vh
+  width: 100%
+  .secHeader
+    opacity: 1
+    display: block
+    position: relative
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    h2
+      font-size: 5rem
+      font-weight: 500
+  .secDescription
+    width: 100%
+    display: inline-block
+    position: relative
+    text-align: center
+    margin: 5px 2px 5vh 2px
+    h4
+      font-size: 2rem
+      font-weight: 400
+
+h2, h3, h4, h5, h6
+  font-family: $secondFont
+
+.red
+  color: $alert
+  
+.loader
+  background: none repeat scroll 0 0 $sky
+  bottom: 0
+  height: 100%
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  z-index: 9999
+  .loaderInner
+    background-image: url("../img/pl.gif")
+    background-size: cover
+    background-repeat: no-repeat
+    background-posirion: center center
+    background-color: $sky
+    height: 60px
+    width: 60px
+    margin-top: -30px
+    margin-left: -30px
+    left: 50%
+    top: 50%
+    position: absolute
+    
+.mainHead
+  background: $sky
+  margin: 0
+  padding: 0
+  .topClouds, .bottomClouds
+    display: block
+    position: absolute
+  .topClouds
+    top: 0
+    height: 300px
+    width: 300%
+    left: -100%
+    .topCloud1, .topCloud2
+       top: 0
+       min-width: 100%
+       display: block
+       position: relative
+    .topCloud1
+      background: url(../assets/topCloud1.svg) transparent repeat-x
+      height: 230px
+      width: 100%
+      left: 0
+      &:after
+        background-color: $lightBlue
+        position: absolute
+        display: block
+        content: ""
+        height: 500px
+        width: 100%
+        bottom: 70%
+        left: 0
+    .topCloud2
+      height: 250px
+      background: url(../assets/topCloud2.svg) transparent repeat-x
+      &:after
+        background-color: $veryLyght
+        position: absolute
+        display: block
+        content: ""
+        height: 500px
+        width: 100%
+        bottom: 90%
+        left: 0
+  .bottomClouds
+    width: 300%
+    left: -100%
+    bottom: 0
+    height: 200px
+    .bottomCloud1, .bottomCloud2
+      bottom: 0
+      min-width: 100%
+      display: block
+      position: relative
+    .bottomCloud1
+      height: 180px
+      background: url(../assets/bottomCloud1.svg) transparent repeat-x
+      &:after
+        background-color: $lightBlue
+        position: absolute
+        display: block
+        content: ""
+        height: 500px
+        width: 100%
+        top: 100%
+        left: 0
+    .bottomCloud2
+      background: url(../assets/bottomCloud2.svg) transparent repeat-x
+      height: 150px
+      top: 40px
+      &:after
+        background-color: $veryLyght
+        position: absolute
+        display: block
+        content: ""
+        height: 500px
+        width: 100%
+        top: 100%
+        left: 0
+  .smallCloud1
+    left: 10% !important
+    top: 10% !important
+    position: absolute
+    display: block
+    background: url(../assets/smallCloud1.svg) transparent no-repeat
+    //height: 200px
+    //width: 410px
+    height: 15vh
+    width: 14vw
+  .smallCloud2
+    left: 70% !important
+    top: 10% !important
+    position: absolute
+    display: block
+    background: url(../assets/smallCloud2.svg) transparent no-repeat
+    height: 200px
+    width: 410px
+    
+  .mainLogo
+    display: block
+    position: relative
+    width: 120px
+    height: auto
+    margin: 14vh auto 6vh
+    +animation-delay(1.2s)
+    +transition(all 2s ease-out)
+    .svgLogo
+  .mainInfo
+    margin: 0 auto
+    display: block
+    position: relative
+    width: 70%
+    z-index: 2
+    h1
+      text-align: center
+      font-family: $secondFont
+      font-size: 2.2кem
+      font-weight: 500
+    .phone
+      font-family: Beryozki, sans-serif
+      font-size: 4.6em
+      font-weight: 600
+      color: #0d47a1
+    p
+      font-family: $secondFont
+
+      font-size: 1.4em
+      text-align: center
+
+.mission
+  background: $veryLyght
+  .secDescription
+  .misCol
+    .missionColHeader
+      text-align: center
+      h5
+        font-size: 3rem
+        font-weight: 400
+    .missionColDescr
+      p
+        padding: 2px 20px 0
+        font-size: 1.8rem
+        font-weight: 300
+        text-align: justify
+        text-indent: 3%
+  
+    .misAnim1, .misAnim2, .misAnim3
+      opacity: 0
+    .misAnim1
+      +transition(all 3.0s ease-out)
+      +animation-delay(1.2s)
+    .misAnim2
+      +transition(all 3.0s ease-out)
+      +animation-delay(1.4s)
+    .misAnim3
+      +transition(all 3.0s ease-out)
+      +animation-delay(1.6s)
+  #misHeader, #misDescr
+    opacity: 0
+  #misHeader
+    +transition(all 1.0s ease-out)
+    +animation-delay(0.8s)
+  #misDescr
+    +transition(all 1.2s ease-out)
+    +animation-delay(0.9s)
+
+.work
+  background: $veryLyght
+  .workCol
+    margin: 0
+    padding: 5px
+    .workImg
+      padding: 0
+      .workSVG
+        width: 100%
+        height: auto
+        display: inline-block
+      img
+        display: block
+        position: relative
+        width: 90%
+        height: auto
+        margin: 0 auto
+    .workColHeader
+      width: 100%
+      h5
+        font-size: 2.4rem
+        text-align: center
+    .workColDescr
+      padding:  30px 10px 20px
+      font-size: 1.4rem
+      font-weight: 300
+
+.price
+  background-color: $lightBlue
+  .priceBlock
+    background: $veryLyght
+    display: block
+    position: relative
+    opacity: 0
+    box-shadow: 0 3px 1px 0 rgba(0,0,0,0.4)
+    h3
+      font-size: 3em
+      font-weight: 500
+      padding: 10px 0 5px 0
+    p
+      padding: 1px 20px
+      font-size: 1.4rem
+      line-height: 1.6rem
+      margin: 4px
+    .priceColPrice
+      display: block
+      position: relative
+      min-height: 30px
+      width: 100%
+      margin: 18px auto
+      p
+        color: $dark
+        font-family: $priceFont
+        font-size: 2.2em
+        font-weight: 600
+    .btn
+      bottom: 2px
+  .anim1
+    background: green
+    +animation-delay(1.4s)
+    +transition(all 0.5s ease)
+  .anim2
+    +animation-delay(1.6s)
+    +transition(all 0.5s ease)
+  .anim3
+    +animation-delay(1.8s)
+  .anim4
+    +animation-delay(2s)
+ 
+.contact
+  margin: 0
+  padding: 0
+  .order
+    display: block
+    position: relative
+  .mapContainer
+    display: block
+    position: relative
+    min-height: 100%
+    height: 100%
+    .mapInner
+      display: block
+      position: relative
+      height: 100%
+      min-height: 100%
+  footer
+    color: $veryLyght
+    display: block
+    position: relative
+    bottom: 0
+    left: 0
+    background: $grey
+    width: 100%
+    height: 100px
+    position: absolute
+    .smallLogo
+      display: block
+      position: relative
+      width: 50px
+      height: auto
+    .text
+
+
+.hidden
+  display: none
+

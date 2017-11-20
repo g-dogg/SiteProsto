@@ -1,0 +1,14 @@
+div.hidden
+	script(src="js/common.js")
+	script.
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-99975446-1', 'auto');
+		ga('send', 'pageview');
+	//script.
+		mapboxgl.accessToken = 'pk.eyJ1IjoiZ2RvZ2ciLCJhIjoiY2lyYm90d3M5MDA0eWk5bWdpNGRtdWUxaiJ9.uAw0b_sIuY7F9slr4VN_dQ';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/gdogg/cj5b79j5n2kmy2smq1defi6t3',
+			center: [73.376975, 54.980733],
+			zoom: 12.6
+		});
